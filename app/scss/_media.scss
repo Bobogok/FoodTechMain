@@ -1,0 +1,153 @@
+@media (max-width: 1365px) {
+  .header {
+    &__logo-name {
+      display: none;
+    }
+  }
+
+  .section {
+    margin-bottom: 0px;
+    margin: 0 auto;
+
+    &__content {
+      padding: 64px 16px;
+    }
+
+    &__title {
+      margin: 0 auto;
+      font-size: 48px;
+      margin-bottom: 24px;
+    }
+
+    &__info {
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+    }
+
+    &__text {
+      font-size: 20px;
+    }
+
+    &__info-title {
+      font-size: 48px;
+      margin-bottom: 72px;
+    }
+
+    &__info-image {
+      display: block;
+      width: 100%;
+      margin: 0 auto 68px auto;
+
+      &--iphone {
+        height: 400px;
+        max-width: 382px;
+        background: {
+          image: url('../img/images/mobile/iPhone12Pro2.png');
+          size: 100% 400px;
+          repeat: no-repeat;
+        }
+      }
+
+      &--samsung {
+        height: 400px;
+        max-width: 382px;
+        background: {
+          image: url('../img/images/mobile/SamsungGalaxyS205G2.png');
+          size: 100% 400px;
+          repeat: no-repeat;
+        }
+      }
+
+      &--macbook {
+        height: 222px;
+        max-width: 382px;
+        background: {
+          image: url('../img/images/mobile/MacBookPro2.png');
+          size: 100% 222px;
+          repeat: no-repeat;
+        }
+      }
+    }
+
+    &__info-main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 32px;
+      margin-bottom: 16px;
+    }
+
+    &__info-second {
+      font-size: 16px;
+      text-align: center;
+      margin-bottom: 24px;
+    }
+
+    &__info-button {
+      align-self: center;
+    }
+
+    &__info-main {
+      font-size: 32px;
+      text-align: center;
+    }
+
+    &__image {
+      display: none;
+    }
+  }
+
+  .footer {
+    background-color: #ffffff;
+    padding: 20px 16px;
+
+    &__connections {
+      grid-template-columns: repeat(2, 50%);
+      // grid-column-gap: 40px;
+      grid-row-gap: 20px;
+    }
+
+    &__phone,
+    &__telegram,
+    &__email {
+      display: flex;
+      flex-direction: column;
+      margin-right: 0px;
+    }
+
+    &__copyright {
+      text-align: left;
+      align-self: end;
+      font-size: 15px;
+      line-height: 24px;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 1040px) {
+}
+
+@media (max-width: 992px) {
+}
+
+@media (max-width: 840px) {
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 650px) {
+}
+
+@media (max-width: 540px) {
+}
+
+@media (max-width: 440px) {
+}
+
+@media (max-width: 375px) {
+} ;

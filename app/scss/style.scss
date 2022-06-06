@@ -1,0 +1,261 @@
+@import '_fonts';
+@import '_reset';
+@import '_vars';
+@import '_global';
+@import '_libs';
+
+.header {
+  max-width: 1280px;
+  margin: 0 auto;
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+  padding: 18px 24px;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__logo-wrapper {
+    cursor: pointer;
+  }
+
+  &__logo-icon {
+    width: 28px;
+    height: 28px;
+    background: {
+      image: url('../img/icons/Logo.svg');
+    }
+    margin-right: 8px;
+  }
+
+  &__logo-name {
+    font: {
+      family: Gopher;
+      size: 24px;
+      weight: 700;
+    }
+    line-height: 32px;
+  }
+
+  &__menu-wrapper {
+    display: flex;
+  }
+
+  &__toWrite {
+    border-radius: 8px;
+    padding: 6px 12px;
+    color: $textOnColor;
+    background-color: $bgPrimary;
+    margin-right: 24px;
+  }
+
+  &__changeLang {
+    padding: 6px 12px;
+  }
+}
+
+.section {
+  margin-bottom: 120px;
+
+  &--colored {
+    background-color: $bgSecondary;
+  }
+
+  &__content {
+    position: relative;
+    padding-top: 144px;
+    padding-bottom: 144px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 72px;
+    line-height: 110%;
+    letter-spacing: 1px;
+    color: $bgPrimary;
+    opacity: $opacity;
+    margin-bottom: 33px;
+    max-width: 813px;
+  }
+
+  &__text {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 36px;
+    color: $textSecondary;
+    display: flex;
+    flex-direction: column;
+    max-width: 710px;
+  }
+
+  &__info {
+    max-width: 605px;
+  }
+
+  &__info-title {
+    font-weight: 600;
+    font-size: 72px;
+    line-height: 110%;
+    color: $title;
+    opacity: $opacity;
+    margin-bottom: 48px;
+  }
+
+  &__info-image {
+    display: none;
+  }
+
+  &__info-main {
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 120%;
+    margin-bottom: 32px;
+  }
+
+  &__info-colored-word {
+    &--purple {
+      color: #570f8a;
+    }
+
+    &--red {
+      color: #e6360f;
+    }
+
+    &--blue {
+      color: #136dec;
+    }
+  }
+
+  &__info-second {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 28px;
+    color: $textSecondary;
+    letter-spacing: -0.33px;
+    margin-bottom: 40px;
+    max-width: 550px;
+  }
+
+  &__info-button {
+    padding: 6px 12px;
+    background-color: $bgButtonSecondary;
+    border-radius: 4px;
+    color: $textSecondary;
+    font-weight: 400;
+    line-height: 20px;
+  }
+
+  &__image {
+    position: absolute;
+
+    &--iphone {
+      top: 64px;
+      right: 129px;
+      width: 290px;
+      height: 588px;
+      background: {
+        image: url('../img/images/desktop/iPhone12Pro1.png');
+        size: 290px 588px;
+        repeat: no-repeat;
+      }
+    }
+
+    &--samsung {
+      top: 64px;
+      right: 140px;
+      width: 268px;
+      height: 588px;
+      background: {
+        image: url('../img/images/desktop/SamsungGalaxyS205G1.png');
+        size: 268px 588px;
+        repeat: no-repeat;
+      }
+    }
+
+    &--macbook {
+      top: 303px;
+      right: 26px;
+      width: 600px;
+      height: 349px;
+      background: {
+        image: url('../img/images/desktop/MacBookPro1.png');
+        size: 600px 349px;
+        repeat: no-repeat;
+      }
+    }
+  }
+}
+
+.footer {
+  background-color: #ffffff;
+  padding: 20px 24px;
+  max-width: 1280px;
+  margin: 0 auto;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__connections {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.18px;
+    color: $textSecondary;
+    display: grid;
+    grid-template-columns: repeat(3, auto) 1fr;
+    width: 100%;
+  }
+
+  &__phone,
+  &__telegram {
+    margin-right: 24px;
+  }
+
+  &__phone-title {
+  }
+
+  &__phone-number {
+  }
+
+  &__telegram-title {
+  }
+
+  &__telegram > &__telegram-link,
+  &__email > &__email-address {
+    color: #1a79ff;
+
+    span {
+      text-decoration: underline;
+    }
+  }
+
+  &__email {
+  }
+
+  &__email-title {
+  }
+
+  &__email-address {
+  }
+
+  &__copyright {
+    align-self: center;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.18px;
+    color: $textTertiary;
+    text-align: right;
+  }
+}
+
+// применяется последней
+@import '_media';
