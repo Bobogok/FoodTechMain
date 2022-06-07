@@ -59,32 +59,54 @@
   }
 }
 
+.samsung-first {
+  width: 345px;
+  height: 496px;
+  background: {
+    image: url('../img/images/desktop/SamsungGalaxyS205G1.png');
+    size: 345px 496px;
+    repeat: no-repeat;
+  }
+}
+
+.googlePlay {
+  margin-right: 16px;
+}
+
 .section {
   margin-bottom: 120px;
+
+  &--store {
+    margin-bottom: 128px;
+  }
 
   &--colored {
     background-color: $bgSecondary;
   }
 
   &__content {
-    position: relative;
-    padding-top: 144px;
-    padding-bottom: 144px;
+    display: flex;
+    padding-top: 140px;
+    // padding-bottom: 140px;
     margin: 0 auto;
+
+    &--store {
+      padding-top: 0px;
+    }
   }
 
-  &__title {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 72px;
-    line-height: 110%;
-    letter-spacing: 1px;
-    color: $bgPrimary;
-    opacity: $opacity;
-    margin-bottom: 33px;
-    max-width: 813px;
-  }
+  // &__title {
+  //   font-family: 'Inter';
+  //   font-style: normal;
+  //   font-weight: 600;
+  //   font-size: 72px;
+  //   line-height: 110%;
+  //   letter-spacing: 1px;
+  //   color: $textPrimary;
+  //   // opacity: $opacity;
+  //   margin-bottom: 33px;
+  //   max-width: 813px;
+  // }
 
   &__text {
     font-size: 24px;
@@ -98,15 +120,21 @@
 
   &__info {
     max-width: 605px;
+    width: 100%;
+    margin-right: 74px;
   }
 
   &__info-title {
-    font-weight: 600;
-    font-size: 72px;
-    line-height: 110%;
-    color: $title;
-    opacity: $opacity;
-    margin-bottom: 48px;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 120%;
+    color: $textPrimary;
+    // opacity: $opacity;
+    margin-bottom: 32px;
+
+    span {
+      color:#E6360F; 
+    }
   }
 
   &__info-image {
@@ -144,6 +172,10 @@
     max-width: 550px;
   }
 
+  &__image-wrapper {
+
+  }
+
   &__info-button {
     padding: 6px 12px;
     background-color: $bgButtonSecondary;
@@ -156,17 +188,17 @@
   &__image {
     position: absolute;
 
-    &--iphone {
-      top: 64px;
-      right: 129px;
-      width: 290px;
-      height: 588px;
-      background: {
-        image: url('../img/images/desktop/iPhone12Pro1.png');
-        size: 290px 588px;
-        repeat: no-repeat;
-      }
-    }
+    // &--iphone {
+    //   top: 64px;
+    //   right: 129px;
+    //   width: 290px;
+    //   height: 588px;
+    //   background: {
+    //     image: url('../img/images/desktop/iPhone12Pro1.png');
+    //     size: 290px 588px;
+    //     repeat: no-repeat;
+    //   }
+    // }
 
     &--samsung {
       top: 64px;
