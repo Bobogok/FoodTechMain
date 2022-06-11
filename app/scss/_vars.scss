@@ -9,3 +9,20 @@ $bgPrimary: #136dec; /* Button Background / Primary / buttonPrimaryEnabled */
 $bgButtonSecondary: rgba(3, 10, 22, 0.04); /* Button Background / Secondary / buttonSecondaryEnabled */
 
 $opacity: 0.1;
+
+
+@mixin absolute-image($top, $side, $width, $height, $url, $isLeft: false) {
+  top: #{$top}px;
+  @if $isLeft {
+    left: #{$side}px;
+  } @else {
+    right: #{$side}px;
+  }
+  width: #{$width}px;
+  height: #{$height}px;
+  background: {
+    image: url($url);
+    size: #{$width}px #{$height}px;
+    repeat: no-repeat;
+  }
+}
