@@ -12,6 +12,10 @@
     display: none;
   }
 
+  .br-mobile {
+    display: block;
+  }
+
   .first-samsung, .samsung-delivery, .second-samsung,
   .third-samsung, .fifth-samsung, .sixth-samsung,
   .seveth-samsung, .eighth-samsung,
@@ -24,6 +28,7 @@
   }
 
   .mobile-store {
+    margin: 0 auto;
     display: flex;
     margin-top: 32px;
     justify-content: center;
@@ -35,11 +40,11 @@
 
   .first-samsung-mobile {
     margin: 0 auto;
-    width: 350px;
+    width: 100%;
     height: 304px;
     background: {
       image: url('../img/images/mobile/SamsungGalaxyS205G1.png');
-      size: 350px 304px;
+      size: 100% 304px;
       repeat: no-repeat;
     }
   }
@@ -47,11 +52,11 @@
   .second-menu-mobile {
     margin: 0 auto;
     margin-top: 19px;
-    width: 376px;
+    width: 100%;
     height: 367px;
     background: {
       image: url('../img/images/common/SamsungGalaxyS205G1.png');
-      size: 376px 367px;
+      size: 100% 367px;
       repeat: no-repeat;
     }
   }
@@ -192,6 +197,10 @@
     margin: 0 auto;
     height:  872px;
 
+    &__info-image {
+      display: none;
+    }
+
     &__other-logo {
       margin-bottom: 16px;
     }
@@ -217,7 +226,7 @@
     }
 
     &--short {
-      height: 720px;
+      height: 744px;
     }
 
     &__image-mobile {
@@ -226,7 +235,7 @@
     }
 
     &__content {
-      padding: 24px 16px;
+      padding: 32px 16px;
     }
 
     &__title {
@@ -319,7 +328,7 @@
   }
 
   .footer {
-    bottom: 46px;
+    bottom: 31px;
     background-color: #ffffff;
     padding: 20px 16px;
 

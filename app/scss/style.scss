@@ -70,7 +70,10 @@
   height: 600px;
   width: 100vw;
   position: absolute;
+}
 
+.br-mobile {
+  display: none;
 }
 
 .store {
@@ -92,7 +95,7 @@
 }
 
 .samsung-delivery {
-  @include absolute-image(54, 156, 359, 365, '../img/images/common/SamsungGalaxyS205G1.png', true);
+  @include absolute-image(78, 156, 359, 365, '../img/images/common/SamsungGalaxyS205G1.png', true);
 }
 
 .second-samsung {
@@ -137,7 +140,7 @@
   position: relative;
 
   &--short {
-    height: 512px;
+    height: 537px;
 
     &__content {
       padding-top: 80px;
@@ -198,9 +201,9 @@
     letter-spacing: 1px;
   }
 
-  &__info-image {
-    display: none;
-  }
+  // &__info-image {
+  //   display: none;
+  // }
 
   &__info-main {
     font-weight: 500;

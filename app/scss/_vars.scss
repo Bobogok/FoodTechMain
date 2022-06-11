@@ -12,6 +12,7 @@ $opacity: 0.1;
 
 
 @mixin absolute-image($top, $side, $width, $height, $url, $isLeft: false) {
+  position: absolute;
   top: #{$top}px;
   @if $isLeft {
     left: #{$side}px;
