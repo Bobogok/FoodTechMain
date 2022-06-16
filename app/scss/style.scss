@@ -77,9 +77,13 @@
 }
 
 .store {
-  position: absolute;
-  bottom: 50px;
-  left: 164px;
+  margin: 0 auto;
+
+  &__content {
+    position: absolute;
+    bottom: 50px;
+    // left: 164px;
+  }
 
   &__google {
     margin-right: 11px;
@@ -132,6 +136,10 @@
 
 .eleventh-samsung {
   @include absolute-image(102, 17, 345, 496, '../img/images/desktop/SamsungGalaxyS205G1.png', true);
+}
+
+.mobile-store {
+  display: none;
 }
 
 .section {

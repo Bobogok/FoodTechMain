@@ -32,6 +32,11 @@
     display: flex;
     margin-top: 32px;
     justify-content: center;
+    
+    &__content {
+      padding: 0 16px;
+      display: flex;
+    }
 
     &__google {
       margin-right: 17px;
